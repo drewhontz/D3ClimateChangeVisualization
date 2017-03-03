@@ -28,11 +28,11 @@ I felt that this was a pretty straightforward visualization. Some ideas I fiddle
 
 I am paraphrasing a bit but here is what my friends said when I sent them the gif.
 
-- Vlad: "I understand this is meant to show change since 1960 and that other years are irrelevant but let me explore other years through a dropdown list. I can see some midwest cities look unaffected by climate change in 2013 but I think they were marked red in earlier years and I can't verify this. As it stands I am left to assume that whatever is blue at the end of the animation is/has not been affected."
+- Person 1: "I understand this is meant to show change since 1960 and that other years are irrelevant but let me explore other years through a dropdown list. I can see some midwest cities look unaffected by climate change in 2013 but I think they were marked red in earlier years and I can't verify this. As it stands I am left to assume that whatever is blue at the end of the animation is/has not been affected."
 
-- Agi: "Is this viz going to be about voting groups? The basic red and blue colors look very much like the colors used to represent conservatives and liberals in the US. Why not use a continuous scale for color to avoid confusion, or choose different colors, or add a legend. Otherwise it makes sense, although I was immediately able to discern that the change in size and color was relevant to temperature change, I wasn't sure of the metric used to display this change. I.E. without reading the title I am not immediately aware that this is degree change since 1960"
+- Person 2: "Is this viz going to be about voting groups? The basic red and blue colors look very much like the colors used to represent conservatives and liberals in the US. Why not use a continuous scale for color to avoid confusion, or choose different colors, or add a legend. Otherwise it makes sense, although I was immediately able to discern that the change in size and color was relevant to temperature change, I wasn't sure of the metric used to display this change. I.E. without reading the title I am not immediately aware that this is degree change since 1960"
 
-- Brad: "Anaheim is not that far South or West. Use other colors, red and blue near an election year is confusing."
+- Person 3: "Anaheim is not that far South or West. Use other colors, red and blue near an election year is confusing."
 
 ### Incorporating this Feedback
 
