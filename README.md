@@ -12,9 +12,9 @@ I chose to only use the US cities included in this set, and again filtered out d
 
 I felt that this was a pretty straightforward visualization. Some ideas I fiddled with but did not implement were:
 
-- Using a chloropleth map
+- Using a chloropleth map.
 
-  - I did not select this approach because I didn't have enough data to fill most of the US counties and I felt that showing change at the state level was less interesting than at the city level
+  - I did not select this approach because I didn't have enough data to fill most of the US counties and I felt that showing change at the state level was less interesting than at the city level.
 
 - Using a continuous color scale from blue to red, to show the degree to which the percentage increased or decreased.
 
@@ -26,7 +26,7 @@ I felt that this was a pretty straightforward visualization. Some ideas I fiddle
 
 ## Feedback
 
-I am paraphrasing a bit but here is what my friends said when I sent them the gif.
+I am paraphrasing a bit but here is what my friends said when I linked them to my visualization.
 
 - Person 1: "I understand this is meant to show change since 1960 and that other years are irrelevant but let me explore other years through a dropdown list. I can see some midwest cities look unaffected by climate change in 2013 but I think they were marked red in earlier years and I can't verify this. As it stands I am left to assume that whatever is blue at the end of the animation is/has not been affected."
 
