@@ -159,7 +159,7 @@
         }
         tempsByYear[data[i]["year"]].push(data[i]);
       }
-      // creating our select box
+      // creating our select box and adding years as options
       var selectLabel = d3.select("body")
         .attr("x", 0)
         .attr("y", 0)
@@ -180,6 +180,7 @@
           return d;
         })
 
+      // setting the change event handler to draw a user selected year
       $(".yearSelection").change(function() {
         var newYear = $(".yearSelection :selected").text();
         drawPoints(tempsByYear[newYear]);
