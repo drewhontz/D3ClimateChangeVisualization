@@ -2,7 +2,7 @@
 
 ## Summary
 
-This visualization is meant to show the percentage change in average annual temperature in cities across the United States.
+This visualization is meant to show the average annual temperature change (mostly increase) since 1960 in cities across the United States.
 
 I found the data set on [kaggle.com](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data); the data comes from the Berkeley Earth Surface Temperature Study that itself, is a combination from 16 reputable pre-existing temperature reports.
 
