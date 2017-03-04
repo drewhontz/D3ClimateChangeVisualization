@@ -24,7 +24,6 @@
     // Add title and create years array for use in creating select
     // box later
     var year = 1960;
-    var years = [];
     var titleText =
       "Degree Change in Average Annual Temperature From 1960 to ";
     var title = svg.append("text")
@@ -98,6 +97,11 @@
 
     // defining how we will draw our points
     var drawPoints = function(data) {
+      // removing old points and changing year text
+      currentYear = data[0]["year"];
+      d3.selectAll(".city").remove();
+      d3.select(".title").text(titleText + currentYear);
+
       svg.selectAll("circle")
         .data(data)
         .enter()
@@ -146,25 +150,22 @@
     // creating our dictionary of year : city locations and avg temp
     // changes
     var animateMap = d3.csv("./data/USCityAverageTempByYear.csv", function(data) {
-      tempsByYear = {};
+      var tempsByYear = {};
+      var years = [];
       for (var i = 0; i < data.length; i++) {
         if (!(data[i]["year"] in tempsByYear)) {
           tempsByYear[data[i]["year"]] = [];
-          years.push(data[i]["year"])
+          years.push(data[i]["year"]);
         }
         tempsByYear[data[i]["year"]].push(data[i]);
       }
-
-      // Animation to keep drawing our years
-      var yearInterval = setInterval(function() {
-        d3.selectAll(".city").remove();
-        d3.select(".title").text(titleText + year);
-        drawPoints(tempsByYear[year]);
-        year++;
-        if (year > 2013) clearInterval(yearInterval);
-      }, 500);
-
       // creating our select box
+      var selectLabel = d3.select("body")
+        .attr("x", 0)
+        .attr("y", 0)
+        .append("text")
+        .attr("class", "selectLabel").text("Select a year:")
+
       var select = d3.select("body").append("select")
         .attr("class", "yearSelection")
 
@@ -179,14 +180,17 @@
           return d;
         })
 
-      $("select").change(function() {
+      $(".yearSelection").change(function() {
         var newYear = $(".yearSelection :selected").text();
-        d3.selectAll(
-          ".city").remove();
-        d3.select(".title").text(titleText + newYear);
-        drawPoints(
-          tempsByYear[newYear]);
+        drawPoints(tempsByYear[newYear]);
       });
+
+      // Animation to keep drawing our years
+      var yearInterval = setInterval(function() {
+        drawPoints(tempsByYear[year]);
+        year++;
+        if (year > 2013) clearInterval(yearInterval);
+      }, 500);
     });
   </script>
 </body>
