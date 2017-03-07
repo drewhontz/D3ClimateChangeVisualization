@@ -24,6 +24,12 @@ I felt that this was a pretty straightforward visualization. Some ideas I fiddle
 
   - I was originally using percentage change as the figure for which to scale the radius of our circles but once I realized that cities like Cincinnati, who had a % increase of ~ 228% which translated to ~0.7 degrees Celsius, I figured degree change would be less misleading/dramatic.
 
+## Findings
+
+Temperature* has increased across the US by 1.4°C on average from the period 1960-2013.
+
+*defined as a cities' average annual temperature
+
 ## Feedback
 
 I am paraphrasing a bit but here is what my friends said when I linked them to my visualization.
